@@ -1,17 +1,14 @@
-// Add an event listenter for clicking calculate
-let calcButton = document.getElementById('calculate');
+// Create the variables
+const myForm = document.querySelector('#my-form');
+const operatorInput = document.querySelector('#operator');
+const numOneInput = document.querySelector('#numOne');
+const numTwoInput = document.querySelector('#numTwo');
 
-let AnswerButton = document.getElementById('answer');
+myForm.addEventListener('submit', onSubmit);
 
-//Define the function when we click
-calcButton.onclick = function(){
-  AnswerButton.value = "numOne + numTwo"
-  console.log(numOne);
+function onSubmit (e) {
+  e.preventDefault();
+  
+
+  console.log(parseInt(numOneInput.value) + parseInt(numTwoInput.value));
 }
-numOne = document.getElementById('numOne'.value);
-numTwo = document.getElementById('numTwo'.value);
-operator = document.getElementById('operator'.value);
-
-console.log('Hello World');
-console.log(numOne);
-console.log(document.querySelector('#numOne'.value));
