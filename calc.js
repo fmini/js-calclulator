@@ -8,29 +8,29 @@ myForm.addEventListener('submit', onSubmit);
 
 function onSubmit (e) {
   e.preventDefault();
-  console.log(operatorInput.value);
   switch (operatorInput.value){
 
     case '+':
-      console.log(parseInt(numOneInput.value) + parseInt(numTwoInput.value));
+      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) + parseInt(numTwoInput.value);
+      
       break; 
 
     case '-':
-          console.log(parseInt(numOneInput.value) - parseInt(numTwoInput.value));
+      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) - parseInt(numTwoInput.value);
       break;
 
     case '*':
-      console.log(parseInt(numOneInput.value) * parseInt(numTwoInput.value));
+      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) * parseInt(numTwoInput.value);
       break;
 
     case '/':
-      console.log(parseInt(numOneInput.value) / parseInt(numTwoInput.value));
+      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) / parseInt(numTwoInput.value);
       break;
 
     case '%':
-      console.log(parseInt(numOneInput.value) % parseInt(numTwoInput.value));
+      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) % parseInt(numTwoInput.value);
       break;
     default:
-      console.log('matched no cases');
+      console.log('Something Went Wrong');
   }     
 }
