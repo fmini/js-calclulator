@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <h1>
+                            A crude first Javascript calculator program 
+                    </h1>
+                <div class="col-6">
+                    <form>
+                        <div class="form-group">
+                            <div>
+                            <label for=>Choose an operator</label>
+                            <select class="form-control" id="operator">
+                                <option>+</option>
+                                <option>-</option>
+                                <option>*</option>
+                                <option>/</option>
+                                <option>%</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Please enter your first number</label>
+                                <input type="number" class="form-control" id="numOne" placeholder="1000">
+                            </div>
+                            <div class="form-group">
+                                <label>Please enter your second number</label>
+                                <input type="number" class="form-control" id="numTwo" placeholder="1000">
+                            </div>
+                            <div>
+                            <button type="submit" class="btn btn-primary" id="calculate">Calculate</button>
+                            </div>
+                            <div id=drumroll>
+                            <label></label>
+                            <input class="form-control" type="number" placeholder="Answer" id="answer" readonly>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
