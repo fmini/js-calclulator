@@ -12,7 +12,6 @@ function onSubmit (e) {
 
     case '+':
       document.querySelector('#answer').placeholder = Number(numOneInput.value) + Number(numTwoInput.value);
-      
       break; 
 
     case '-':
