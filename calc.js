@@ -11,24 +11,24 @@ function onSubmit (e) {
   switch (operatorInput.value){
 
     case '+':
-      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) + parseInt(numTwoInput.value);
+      document.querySelector('#answer').placeholder = Number(numOneInput.value) + Number(numTwoInput.value);
       
       break; 
 
     case '-':
-      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) - parseInt(numTwoInput.value);
+      document.querySelector('#answer').placeholder = Number(numOneInput.value) - Number(numTwoInput.value);
       break;
 
     case '*':
-      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) * parseInt(numTwoInput.value);
+      document.querySelector('#answer').placeholder = Number(numOneInput.value) * Number(numTwoInput.value);
       break;
 
     case '/':
-      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) / parseInt(numTwoInput.value);
+      document.querySelector('#answer').placeholder = Number(numOneInput.value) / Number(numTwoInput.value);
       break;
 
     case '%':
-      document.querySelector('#answer').placeholder = parseInt(numOneInput.value) % parseInt(numTwoInput.value);
+      document.querySelector('#answer').placeholder = Number(numOneInput.value) % Number(numTwoInput.value);
       break;
     default:
       console.log('Something Went Wrong');
